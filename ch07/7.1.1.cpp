@@ -8,7 +8,7 @@ using namespace std;
 int main(){
 	Sales_data total;
 	
-	cout<< "Please enter:\n\nBookNo\tUnits\tRevenue\n\n" <<endl;
+	cout<< "Please enter:\n\nBookNo\tUnits\tRevenue\n" <<endl;
 	if(cin>>total.bookNo >>total.units_sold >>total.revenue){
 		Sales_data trans;
 		while(cin>>trans.bookNo >>trans.units_sold >>trans.revenue){
@@ -18,7 +18,7 @@ int main(){
 				// use combine function to procces this 
 				total.combine(trans);
 			}else{
-				cout << total.bookNo << " "<< total.units_sold <<" "<<total.revenue <<endl;
+				cout << total.bookNo << "\t"<< total.units_sold <<"\t"<<total.revenue <<endl;
 				total = trans;
 			}
 		}
