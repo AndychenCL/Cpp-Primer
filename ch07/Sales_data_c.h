@@ -54,6 +54,7 @@ Sales_data add(const Sales_data &lhs, const Sales_data &rhs){
 
 std::ostream &print(std::ostream &os, const Sales_data &item){
 	os<< item.isbn() <<" " << item.units_sold<< " "<< item.revenue;
+	return os;
 }
 
 std::istream &read(std::istream &is, Sales_data &item){

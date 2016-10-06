@@ -12,20 +12,20 @@ using namespace std;
 
 int main(){
 	Sales_data total;
-	print(cout, total);
-	printf("\n");
+	print(cout, total) << endl;
+	//printf("\n");
 	
 	Sales_data t2("My-time");
-	print(cout, t2);
-	printf("\n");
+	print(cout, t2) << endl;
+	//printf("\n");
 	
 	Sales_data t3("My-time", 34, 86.34);
-	print(cout,t3);
-	printf("\n");
+	print(cout,t3) << endl;
+	//printf("\n");
 	
 	Sales_data t4(cin);
-	print(cout,t4);
-	printf("\n");
+	print(cout,t4) << endl;
+	//printf("\n");
 	
 	return 0;
 }
